@@ -32,4 +32,17 @@ Wprowadzamay h2 h2 liste i - nowy rodzaj - form, czyli element formularza z labe
 
 Wyswietlamy - potem zkomentowujemy link	 do css (...wbudowane) i sprawdzamy ponownie 
 
+Lekcja-4
+CONTAINERS AND BREAKPOINTS
+Kontenery to podstawowe pojemniki na kontent ktory go odpowiednio stylizuje, zawija itd.
+Istnieja 2 rodzaje kontenerow:
+
+fixed - to te w ktorych maxymalne szerokosci tego kontenera "przełączją" sie w zaleznosci na jakiej wielkosci okna/urzadzenia beda wyswietlane. Przelaczanie odbywa się w miejscach zwanymi breakpoints - to okeslone konkretne wartosci szerokosci po przekroczeniu ktorych zostaje przejety max width.
+
+fluid - to takie ktore zawsze maja 100% dostepnej szerokosci
+
+Objewartosci sa powszechnie stosowane w zaleznosci od projektu wizualnego strony.
+
+W index wstawiamy oba kontenery z tekstami (stylizujemy je inline tylko dla celow zadania) i w oknie inspekcji przeladarki zminiejszamy szerokosc okna obserujac jakie wartosci width przyjmuja oba kontenery.
+
 
