@@ -23,3 +23,13 @@ W head tag meta z nazwa viewport to info ze cokolwiek robimy wykozystujac framew
 Potem link do CSS
 Potem linki do skryptow - tu UWAGA - kolejnosc musi byc zachowana bo np link 3ci kozysta z bibliotek wczesniejszych linkow powyzej.
 
+Lekcja-3
+BOOTSTRAP REBOOT
+Wprowadzenie uniwersalnego prostego kodu i znormalizowanych poczatkowych stylow dla poszczegolnych elementow strony jak np naglowki, linki, listy, paragrafy, tablice, ...
+
+Wprowadzamy w naszym index pare elementow zeby sprawdzic jak beda wyglaaly style.
+Wprowadzamay h2 h2 liste i - nowy rodzaj - form, czyli element formularza z labelem, polem txt i klawiszem do wprwadz.
+
+Wyswietlamy - potem zkomentowujemy link	 do css (...wbudowane) i sprawdzamy ponownie 
+
+
