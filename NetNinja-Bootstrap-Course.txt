@@ -66,4 +66,24 @@ col-sm-6 col-lg-3 - tutaj w sytuacji jak mamy 4 konenery - na duzych beda 4 obok
 Mozna jeszcze okreslic zeby wszedzie na kazdym ekranie byly obok siebie - np dla 4 kont uzyjemy klasy:
 col-3 	tutaj zawsze beda 3 kont 1-obk-2 w jednym wierszu (kazdy 1 z 4 el okupuje po 3 col).
 
+Lekcja-6
+GRIS SYSTEM - FLEX
+Koncepcja siatki bardziej elastycznie.
+Bootstrap pozwala na rozmieszczenie kontenerow w bardziej elastyczny sposób.
+
+Gdy komorki-divy oznaczymy klasami bez podawania liczby kolumn (podajac tylko dla jakich ekranow tj sm md czy lg) jake ma okupowac Bootstrap rozmiesci je automatycznie przyznajac "po równo"
+
+2gi element elastycznosci to taki gdzie jedna z komorek-div ma miec konkretna ilosc kolumn. Bootstrap automatycznie "wypełni" pozostałymi komorkami-divami pozostała przestrzen we wiersu.
+
+Teraz przypadek gdy mamy kilka komorek-divow np 3 ale po 2 col. Bootstrap ustawi je od poczatku wiersza a pozostala czesc czesc wiersza bedzie pusta.
+
+Do ww - gdy chcemy aby nasze 3 komorki-divy pojawily sie na srodku wiersza. Wykozystujemy klase justyfy-content-md-center, ktora dopisujemy w divie "wierszowym" (okalajacym komorki-divy)
+
+Mozna tez zmienic kolejnosc od lewej komorek-divów poprzez dodanie dodatkowej klasy - tym razem do komorkidiva ktora chcemy przestawic - np flex-last, czy flex-first
+
+Jest wiele wiecej mozliwosci wykorzystujacych flex Grid
+Link do strony:
+https://v4-alpha.getbootstrap.com/utilities/flexbox/
+
+
 
