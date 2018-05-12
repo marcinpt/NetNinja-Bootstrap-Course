@@ -50,11 +50,13 @@ GRID SYSTEM - THE BASICS
 Koncepca siatki polega na podziale strony na wiersze i kolumny. Kazdy wiersz podzielony jest na 12 kolumn. Projektujac strone i rozmieszczając elementy okreslamy ile kolumn bedzie przypadac na kontener tory bedzie je zawieral. 
 Na cele zadania wprowadzamy style wbudowane aby odroznic latwo kontenery.
 
-Zachowujac działanie mechanizmu prawidlowego rozmieszczania el w zaleznosci od rozmiaru okna poslugujemy sie klasami o ustalonych wartosciach jak np:
+Zachowujac działanie mechanizmu prawidlowego rozmieszczania el w zaleznosci od rozmiaru okna poslugujemy sie klasami o ustalonych wartosciach jak:
+
+container - glowna klasa okalajaca zawierajaca divy z klasami row
 
 row - klasa dla diva okalającego div'y z klasami col-...
 
-col-md-6	oznaczający ze kont z tka klasa bedzie okupowal 6 kolumn (z 12) w urzadzeniach ze sredniej-wlk ekranami. Jesli bedzie 2gi taki sam kontener to bedzie w wierszu zawsze 2 obok ale - UWAGA - wpis md tym samym mowi ze w przypadku malej-wlk ekranow (sm) beda jeden pod drugim. Chcac wymusic jeden-obok-drugiego musielibysmy uzyc col-sm-6 (wyjatek: nie dotyczy bardzo malych ekranow - wtedy tez bedzie 1-pod-2).
+col-md-6	oznaczający ze kont (inczej: komorka-div) z taka klasa bedzie okupowal 6 kolumn (z 12) w urzadzeniach ze sredniej-wlk ekranami. Jesli bedzie 2gi taki sam kontener to bedzie w wierszu zawsze 2 obok ale - UWAGA - wpis md tym samym mowi ze w przypadku malej-wlk ekranow (sm) beda jeden pod drugim. Chcac wymusic jeden-obok-drugiego musielibysmy uzyc col-sm-6 (wyjatek: nie dotyczy bardzo malych ekranow - wtedy tez bedzie 1-pod-2).
 
 col-sm-6 - opisane w gornym przyp
 
@@ -85,5 +87,16 @@ Jest wiele wiecej mozliwosci wykorzystujacych flex Grid
 Link do strony:
 https://v4-alpha.getbootstrap.com/utilities/flexbox/
 
+Lekcja-7
+JUMBOTRONS
+Co to je? - to klasa dla diva ktory bedzie zawieral jakis banner reklamowy z marketingowymi informacjami lub np grafike naglowkowa. Taki div jesli bedzie zawarty w jakim divie okalajacym nie bedzie zawieral calej szerokosci. 
+
+Jesli bysmy chcieli aby zawieral sie w calej szerokosci od lewej do prawej to usuwamy diva okalajacego z klasa container - teraz mamy cala szerokosc.
+
+Gdy teraz zmienimy kolor (do celow testowych) - widzimy zaokraglone rogi. Aby wypelnic calosc "prostokata" dopisujemy kolejna klase do naszego diva - jumbotron-fluid.
+
+Dodajemy jakis kontent - h1 i p. idzimy ze jeston ustawiony przy samej lewej. Nie chcemy tak - chcemy je odsunac. Aby tego dokonac robimy okalający kontener - wewn naszego diva z jumbo... tworzymy okalajacego nasz kontent (h1 i p) diva z klasa container.
+
+Dalsze udoskonalenie w nast lekcji
 
 
