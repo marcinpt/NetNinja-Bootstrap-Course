@@ -45,4 +45,25 @@ Objewartosci sa powszechnie stosowane w zaleznosci od projektu wizualnego strony
 
 W index wstawiamy oba kontenery z tekstami (stylizujemy je inline tylko dla celow zadania) i w oknie inspekcji przeladarki zminiejszamy szerokosc okna obserujac jakie wartosci width przyjmuja oba kontenery.
 
+Lekcja-5
+GRID SYSTEM - THE BASICS
+Koncepca siatki polega na podziale strony na wiersze i kolumny. Kazdy wiersz podzielony jest na 12 kolumn. Projektujac strone i rozmieszczając elementy okreslamy ile kolumn bedzie przypadac na kontener tory bedzie je zawieral. 
+Na cele zadania wprowadzamy style wbudowane aby odroznic latwo kontenery.
+
+Zachowujac działanie mechanizmu prawidlowego rozmieszczania el w zaleznosci od rozmiaru okna poslugujemy sie klasami o ustalonych wartosciach jak np:
+
+row - klasa dla diva okalającego div'y z klasami col-...
+
+col-md-6	oznaczający ze kont z tka klasa bedzie okupowal 6 kolumn (z 12) w urzadzeniach ze sredniej-wlk ekranami. Jesli bedzie 2gi taki sam kontener to bedzie w wierszu zawsze 2 obok ale - UWAGA - wpis md tym samym mowi ze w przypadku malej-wlk ekranow (sm) beda jeden pod drugim. Chcac wymusic jeden-obok-drugiego musielibysmy uzyc col-sm-6 (wyjatek: nie dotyczy bardzo malych ekranow - wtedy tez bedzie 1-pod-2).
+
+col-sm-6 - opisane w gornym przyp
+
+col-lg-3 - analogicznie - beda 3obok-siebie ale tylko na duzych. w mniejszych beda 1-pod-2
+
+Mozemy uzyc kombinacji kilku np:
+col-sm-6 col-lg-3 - tutaj w sytuacji jak mamy 4 konenery - na duzych beda 4 obok siebie, ale na srednich beda po 2 obok siebie w 2 wierszach bo mamy do podzielenia tylko 12 kolumn na wiersz (beda 2 wiersze po 2 el - kazdy po 6 col). Na sm beda wszystkie 1-pod-2 - czyli w 4 werszach.
+
+Mozna jeszcze okreslic zeby wszedzie na kazdym ekranie byly obok siebie - np dla 4 kont uzyjemy klasy:
+col-3 	tutaj zawsze beda 3 kont 1-obk-2 w jednym wierszu (kazdy 1 z 4 el okupuje po 3 col).
+
 

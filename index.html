@@ -7,15 +7,35 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style>
+        .row div{padding: 20px 10px; border: 1px solid;}
+    </style>
+
   </head>
   <body>
 
-    <div class="container" style="background: skyblue">
-      <h1>Fixed Container</h1>
-    </div>
+    <div class="container">
 
-    <div class="container-fluid" style="background: yellow">
-      <h1>Fluid Container</h1>
+        <div class="row" style="background: lightblue;">
+            <div class="col-md-6">col-md-6</div>
+            <div class="col-md-6">col-md-6</div>
+        </div>
+
+        <div class="row" style="background: pink;">
+            <div class="col-sm-6 col-lg-3">col-sm-6 & col-lg-3</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6 & col-lg-3</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6 & col-lg-3</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6 & col-lg-3</div>
+        </div>
+
+        <div class="row" style="background: yellow;">
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+            <div class="col-3">col-3</div>
+        </div>
+
     </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
