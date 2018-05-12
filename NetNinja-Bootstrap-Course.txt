@@ -1,4 +1,25 @@
 Lekcja-1
 Bootstrap to tzw framework CSS - zestaw narzedzi ktore pozwalaja tworzyc strony ktore beda sie automatycznie dostosowywac w zaleznosci na jakim urzadzeniu, lub przegladarce będą wyswietlane (będą "responsywne"). Technicznie to zestaw gotowych klas ktore mozemy wykozystac w CSS. Bootstrap wykozystuje takze w nich JavaScript. Kozystając z Bootstrapa mozemy szybki dostep do klas ktore pozwola nam zbudowac przyciski, rozwijalnemenu czy "plywające" interfejsy.
 
+Lekcja-2
+Download softu i instalacja Bootstrap.
+
+Calosc kursu dostepna w repo na Githubie NetNinja:
+https://github.com/iamshaunjp/bootstrap-4-playlist
+
+Instalujemy Edytor tekstowy Atom plus wtyczka live-server
+
+Bootstrap - link
+https://v4-alpha.getbootstrap.com/getting-started/introduction/
+Istniej wiele sposobow uzywania czy pobrania Bootstrap'a
+1 poprzez manadzerow pakietow
+2 Bootstrap CSS and JS - Reczne pobranie. Jest tam wiele plikow, bibliotek gotowych do uzycia - skompilowanych. Mamy 3 opcje: domyslna, tylko gird, tylko Reboot. Zawarte tez wtyczki JavaScript.
+3. Source Files - pliki Sass. Zawarta tez dokumentacja. Zawieraja reguły dla wszystkich pojedynczych komponentow.
+4. Bootstrap CDN - najprostszy sposob korzystania - polega na podlinkowaniu w naglowku html w tagu link (style wbudowane) do CSS Bootstrapa w Internecie oraz na koncu sekcji body w tagu script (std sposob na linkowanie skryptow w html) do JavaScriptu Bootstrapa w Internecie.
+
+My wykozystamy 4ty sposob ale recznie tzn kopiujac kod - wchodzac do menu i linku Wprowadzenie i wyborze Szablon wstepny (Starter taplate). Wklejamy go w naszym edytorze ATOM w nowym pliku naszego projektu - index.html.
+
+W head tag meta z nazwa viewport to info ze cokolwiek robimy wykozystujac framework bootstrap'a bedzie automatycznie dostosowywane do ekranow malych urzadzen np tabletow czy smartfonow.
+Potem link do CSS
+Potem linki do skryptow - tu UWAGA - kolejnosc musi byc zachowana bo np link 3ci kozysta z bibliotek wczesniejszych linkow powyzej.
 
