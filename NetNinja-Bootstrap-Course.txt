@@ -99,4 +99,21 @@ Dodajemy jakis kontent - h1 i p. idzimy ze jeston ustawiony przy samej lewej. Ni
 
 Dalsze udoskonalenie w nast lekcji
 
+Lekcja-8
+BOOTSTRAP UTILITIES & TYPOGRAPHY
+Link do Utilities Bootstrap gdzie znajduje się zbior klas-utylities:
+
+https://v4-alpha.getbootstrap.com/utilities/borders/
+
+Wykozystując powyzsze klasy-narzedzia bedziemy upiekszac nasz dosc nudny projekt gdzie jak do tej pory jest tylko div z klasa jumbotron i z mała zawartoscia. Wykozystamy zaledwie kilka z dosc obszernej listy.
+Szukamy na liscie (w menu Color) kolorow tla - kazde tlo ma swoja klase-nazwe. Wybraną wkleimy do argumentu class naszego diva z jumbotron. Na tej samej liscie kolorow tła jest obok klasa od kloru tekstu na przykladzie tego tla. W ten sam sposob dopisujemy do naszych klas diva z jumbotron.
+
+Teraz kolej na typografie. Przechodzimy do menu - Content > Typogrphy:
+Tam wyszukujemy na liscie dostepnych naglowkow i tytułów ten ktory nam odpowiada. Wybieramy z listy linijek kodow im odpowiadajcych nazwe uzytej klasy i wklejamy do nazego html'a do h1 (w kontenerze w divie z jumbo) - tym razem jako argument class i jej 1sza wartosc - 1sza klase.
+W tym samym miejscy dokumentacji znajdziemy klase dla p tagow - .lead. W analogiczny sposob aplikujemy dla paragrafu.
+
+Teraz chcemy aby tekst nie byl do lewej kontenera a wysrodkowany.
+W doc podanej strony przechodzimy do: menu Utilities > Typogrphy
+Tam w sekcji Text alignment szukamy przykladu klasy od wysrodkowania - bedzie to text-center. Wklejamy do diva z jumbotron jako kolejna klase. Teraz cały kontent mamy wysrodkowany.
+
 
