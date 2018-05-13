@@ -116,4 +116,27 @@ Teraz chcemy aby tekst nie byl do lewej kontenera a wysrodkowany.
 W doc podanej strony przechodzimy do: menu Utilities > Typogrphy
 Tam w sekcji Text alignment szukamy przykladu klasy od wysrodkowania - bedzie to text-center. Wklejamy do diva z jumbotron jako kolejna klase. Teraz cały kontent mamy wysrodkowany.
 
+Lekcja-9
+CARDS
+Karty to nowy komponent Bootstrap'a 4. We wczesniejszej wersji 3.0 jest podobny - panel, jednak komponent Card jest bardziej elastyczny i posiada wiele odmian. Szczegóły na:
+https://v4-alpha.getbootstrap.com
+menu Components > Card
+
+1szy etap - potrzebujemy grid wiec tworzymy div z container (konieczny dla funkcjonalnosci responsywnosci).
+
+2gi - tworzymy div z row (konieczny dla funkcjonalnosci responsywnosci) - w nim beda divy-komorki ktore beda okupowac col'y.
+
+Nastepnie tworzymy 1 z 4 div-komorek ktore tworzyc beda bloki zawierajace karty. Zapewniamy responsywnosc dla md i lg - maja byc 4 karty wiem dla md okreslamy 6 col a dla lg 3.
+
+Dopiero wewn takiego bloku tworzymy karte - czyli kolejny div ale z card.
+
+Wpisujemy na probe jakis kontent - paragraf. Po zapisaniu i sprawdzeniu wyglad jest bardzo "surowy" i ubogi (mala ramka, brak padding...) Aby to poprawic tworzymy wewn div z card dodatkowy blok div z card-block - jest on przeznaczony wlasnie do zawarcia kontentu w divach-kartach. W nim dopiero tworzymy paragraf.
+
+W tym samym divie z card-block'iem nad paragrafem wstawiamy h3 z z card-title. To bedzie naglowek
+
+Teraz grafika karty. Poniewaz blok div z card-blokiem zapewnia padding, a my chcemy zeby nasz obrazek wypelnil cala szerokosc karty - wstawiamy img bezp w div z card. Aby obrazek nie wyjezdzal poza ramy karty
+wykozystujemy klase card-img-top. Jest ok ale obraz jest troche rozciagniety w pionie. Aby zachowac proporcje dodajemy dodatkowo img-fluid. To juz prawie gotowa karta
+
+Powielamy ja x3 zmieniajac tylko nazwe grafiki. Na koniec zabieg estetyczny dot tekstu we wszyskich kartach - korzystamy z klasy text-muted ktora dopisujemy do diva kontenera z siatka - tj z container.
+
 
