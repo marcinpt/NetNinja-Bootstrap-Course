@@ -139,4 +139,31 @@ wykozystujemy klase card-img-top. Jest ok ale obraz jest troche rozciagniety w p
 
 Powielamy ja x3 zmieniajac tylko nazwe grafiki. Na koniec zabieg estetyczny dot tekstu we wszyskich kartach - korzystamy z klasy text-muted ktora dopisujemy do diva kontenera z siatka - tj z container.
 
+Lekcja-10
+BOOTSRAP NAVS
+W dok - menu Components > Navs
+Tworzymy nawigacje gdzie bedziemy mieli mozliwosc przeczytania zawsze w tym samym miejscu informacji o kliknietej przez nas jednej z kilku pozycji-spikerow bedacych powyzej.
+
+1szy krok - tworzymy naglowek. Bedie to h2 ale z - podobnie jak we wczesniejszych lekcjach - z display-4.
+Po wyswietleniu widzimy ze trzaba wysrodkowac - text-center, ale bylo by lepiej z marginesami. Jest na to klasa: dla padding to py- (gora-dol) lub px- (boki) zakonczona cyfra bedaca jego wilkoscia. Dla marging jest to odpowiednio mx- i my- 
+My Nadajemy py-5 i my-4
+
+Twozymy blok nav - poprostu tag nav ale z klasa nav.
+
+Wewn nav'a tworzymy juz a linki - narazie z pustym href - ale z nav-link. Powielamy x4 zmieniajac tekst linku w pozostalych 3. Linki juz sa ale byloby fajnie gdyby byly wyjustowane do srodka.
+
+Justujemy linki do srodka - dopisujemy klase justyfy-content-center - gdzie? - W nav.
+
+Teraz chcemy nadac linkom styl "pills" - zaglodamy w doc i wklejamy do nav klase nav-pills. Sprawdzamy: NIC! sie nie zmienilo. Dlaczego? Bo ta klasa dziala dopiero dla linku ktory bedzie aktywny - wiec nadajemy status active dla 1szego linku - dopisujemy w nim klase active. Teraz dopiero jest efekt.
+
+Zauwazamy ze linki nie sa responsywne - przy waskim ekranie nie ukladaja sie 1-pod-2 Jest na to klasa: flex-column. Teraz jest 1-pod-2 ALE jak zwiekszymy szerokosc ekranu to w dalszym ciagu sa in-stack (1-pod-2). Mozemy okreslic ze juz dla srednich ekranow bedzie wszystko w jednym wierszu - klasa: flex-md-row
+
+Teraz tworzymy blok z informacjami o aktualnie wybranym spikerze. Tworzymy div z klasa tag i py-5. Klasa tag to informacja ze blok bedzie zawieral wiele roznych informacji - ktore beda korespondowac do odpowiednich linkow powyzej. Kazda taka informacja zawarta bedzie w swoim divie:
+
+Tworzymy 1szego diva-informacje o 1szym spikerze - div z klasa dab-pane. Wewn umieszczamy h3 i p.
+Sprawdzamy - NIC! Powielamy x3. Sprawdzamy - dalej NIC! Dlaczego? - bo - tak jak poprzednio - informacja pojawi sie ale dla informcji o statusie aktywny - dodajemy do 1szego bloku z inf klase active. Teraz sie dopiero wyswitli info.
+
+Teraz uruchamiamy funkcjonalnosc przelaczania odpowiednich inf w zaleznosci od wybranej poz w nav. Jest to mechanizm java scriptu zawarta w bootstrapie. Dokonujem tego dopisując ARGUMENT (nie klase) data-toggle z wartościa "tab" do kazdego linka w navie. Teraz - rownie wazne - musimy powiazac linki z odpowiednimi dla nich blokami z info. Bootstrap nie wie ktory link do jakiego bloku sie odnosi - musimy mu o tym powiedziec:
+"Oznaczamy" id kazdy z blokow z inf poprzez dodanie argumentu id z unikalna wartoscia. Teraz powiazanie tych blokow z linkami odbywa sie przez wpisanie odpowiadających id do arg href kazdego z linkow - pamietamy o zanku # przed. Dziala ale blok inf jest ten sam - bo nie zmienilismy go pwielajac wczesniej Poprawiamy kontenet h3 kazdego z pozostalych 3 z 4 blokow.
+
 
