@@ -166,4 +166,46 @@ Sprawdzamy - NIC! Powielamy x3. Sprawdzamy - dalej NIC! Dlaczego? - bo - tak jak
 Teraz uruchamiamy funkcjonalnosc przelaczania odpowiednich inf w zaleznosci od wybranej poz w nav. Jest to mechanizm java scriptu zawarta w bootstrapie. Dokonujem tego dopisując ARGUMENT (nie klase) data-toggle z wartościa "tab" do kazdego linka w navie. Teraz - rownie wazne - musimy powiazac linki z odpowiednimi dla nich blokami z info. Bootstrap nie wie ktory link do jakiego bloku sie odnosi - musimy mu o tym powiedziec:
 "Oznaczamy" id kazdy z blokow z inf poprzez dodanie argumentu id z unikalna wartoscia. Teraz powiazanie tych blokow z linkami odbywa sie przez wpisanie odpowiadających id do arg href kazdego z linkow - pamietamy o zanku # przed. Dziala ale blok inf jest ten sam - bo nie zmienilismy go pwielajac wczesniej Poprawiamy kontenet h3 kazdego z pozostalych 3 z 4 blokow.
 
+Lekcja-11
+NAVBAR
+Tworzymy nawigacje - górne menu, które bedzie responsywne w sposób specyficzny. Jego specyficznosc bedzie polegala na tym ze na malych ekranach (np smartfony) blok nawigacyjny "zamienia" sie w button, który po kliknieciu ukazuje nasze pozycje menu in-stock. Przy duzych ekranach pojawia sie jako pełne menu.
+
+Blok nawigacyjny umieszczamy na szczycie sekcji body, nad naszym blokiem jumbotron.
+Uzyjemy do tego celu tagu zamiast div - nav (jest "bardziej-składniowy").
+
+Nasz blok nav bedzie zawierał kilka klas: 
+- główna klasa: navbar
+- klasa: navbar-toggleable-sm - ta klasa to informacja dla bootstrap'a ze bedzie to navbar ktory bedzie sie 	"zwijał" do przycisku i rozwijal w dół - dla malych ekranow.
+- klasa: bg-info - blekitne tlo dla bloku nav - przyjmie taki sam kolor jak nasz blok z jumbotron.
+
+Teraz gdybysmy chcieli wyswietlic nasz blok nav to bedzie zajmowal caly wiersz bo nie zawiera zadnego bloku container do zawartosci, wiec go tworzymy div z container. Dopiero w nim bedziemy umieszczac konkretne elementy:
+
+Button
+- ktory bedzie przelacznikiem (toggle) pokaz/ukryj kontent. Dokonujemy tego poprzez utworzenie elementu-tagu button. Button to element ktory tez moze zawierac kontent jak tekst, obrazek czy inny el. Aby nasz przycisk mial funkcje ww przelacznika musimy zastosowac w nim klase: 
+
+navbar-togler
+oraz 2 klasy z odp wartosciami - 1sza to okreslenie zachowania się czyli zadania przełącznika (zwijanie), 2gi to cel-przedmiot na ktorym bedzie wykonywane zadanie (dev z kontentem):
+
+data-toggle z wart "collapse" - zadaniem bedzie zawijanie
+
+data-target z wart "#nazwaid" - przedmiot zadania to kontener z podanym id (pozniej go dopiero utworzymy) ktory 	zawiera kontent.
+
+Elemntem wewn buttona bedzie el liniowy span z klasa navbar-toggler-icon. To klasa Bootstrapa ktory stylizuje nasz span jako ikone symbolizujaca menu (3 poziome kreseczki).
+
+Po utworzeniu przycisku pora na wlasciwe linki. Musza sie one zawierac w bloku ktory bedzie dawal sie zwijac wiec pod buttonem tworzymy diva z klasami:
+
+collapse - to inf dla bootstrapa ze blek ten ma sie dawac zawijac
+
+navbar-colapse - to informacja ze elementem ktory bedzqie zawijal to nie jakis element na stronie tylko navbar
+
+oraz najwazniejsze - tworzymy w nim arg id ktore juz wpisalismy wyzej jako cel zadania buttona czyli id="nazwaid"
+
+Teraz linki. Linki nawigacyjne musza sie zawierac w specjalnym bloku - bloku z klasa navbar-nav (to informacja ze bedzie nav w navbarze). Wewnatrz juz same linki - a tagi ze sciezkami href (dla celow zadania podajemy zamiast adresow tylko znak #) ALE takze wewn tagow zawieramy klasy ktore potraktuja (czytaj ustylizują) nasz link jako pozycja menu nawigacji (klasa nav-item) oraz jednoczesnie link menu nawigacji (klasa nav-link).
+Powielamy link x3 (4 pozycje) i roznicujemy tekstem wyswietlanym.
+Jeszcze na koniec - podobnie jak we wczesniejszych przykladach - musimy okreslic 1szy link jako aktywny czyli klasa active.
+
+Na sam koniec- czysto estetycznie - zmienimy kolor kontentu navbaru na biały (normalnie jest granatowy) - dopisujemy w tagu nav z navbar dodatkowa kase navbar-inverse.
+
+Dla jasnosci - ta lekcja jest o navbar a nie o nav ktory byl przedmiotem w poprzedniej lekcji.
+
 
