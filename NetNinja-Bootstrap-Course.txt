@@ -1,5 +1,5 @@
 Lekcja-1
-Bootstrap to tzw framework CSS - zestaw narzedzi ktore pozwalaja tworzyc strony ktore beda sie automatycznie dostosowywac w zaleznosci na jakim urzadzeniu, lub przegladarce będą wyswietlane (będą "responsywne"). Technicznie to zestaw gotowych klas ktore mozemy wykozystac w CSS. Bootstrap wykozystuje takze w nich JavaScript. Kozystając z Bootstrapa mozemy szybki dostep do klas ktore pozwola nam zbudowac przyciski, rozwijalnemenu czy "plywające" interfejsy.
+Bootstrap to tzw framework CSS - zestaw narzedzi ktore pozwalaja tworzyc strony ktore beda sie automatycznie dostosowywac w zaleznosci na jakim urzadzeniu, lub przegladarce będą wyswietlane (będą "responsywne"). Technicznie to zestaw gotowych klas ktore mozemy wykozystac przy budowie strony html. Bootstrap kozysta takze w niektorych z niech z JavaScript. Kozystając z Bootstrapa mamy szybki dostep do klas ktore pozwola nam budowac przyciski, rozwijalne menu, "plywające" interfejsy i wiele innych.
 
 Lekcja-2
 Download softu i instalacja Bootstrap.
@@ -207,5 +207,23 @@ Jeszcze na koniec - podobnie jak we wczesniejszych przykladach - musimy okreslic
 Na sam koniec- czysto estetycznie - zmienimy kolor kontentu navbaru na biały (normalnie jest granatowy) - dopisujemy w tagu nav z navbar dodatkowa kase navbar-inverse.
 
 Dla jasnosci - ta lekcja jest o navbar a nie o nav ktory byl przedmiotem w poprzedniej lekcji.
+
+Lekcja-12
+TOOLTIP
+Jest to malutki element-pole pop-up ktore pojawaja sie gdy najedziemy myszka na jakis wybrany frg tekstu.
+Wykozystujemy do tego skrypt js (a dokladnie tether - patrz jeden z 3 linkow do klas Bootdtrapa).
+Umieszczamy go w tagach script pod linkami na koncu sekcji body. Wyglada tak:
+
+    <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
+Polega on na wyszukaniu elementu z argumentem data-toggle z wartoscia "tooltip" i uruchomieniu na tym elemencie funkcji tooltip()
+
+Teraz wyszukujemy jakis frg tekstu ktory otaczamy spanem w ktorym dodajemy wyzej wspomniany arg data-toggle="tooltip" Kolejnym arg w tym spanie bedzie wlasnie zawartosc pojawiajacego sie popup'a - arg title="costamcostam". Aby wyroznic ten frg tekstu dodajemy na koncu klase text-info.
+Na koniec maly przelacznik ktorym mozemy zmienic pozycje wyswietlania popup'a - arg data-placement="bottom" (ten spowoduje ze bedzie ponizej).
+Zauwaz ze wszystko potrzebne do działania tooltipa to skrypt i argumenty (nie klasy) poza wyjatkiem wyroznienia frg tekstu.
 
 
